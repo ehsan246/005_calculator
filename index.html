@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+
+		<div class="white">
+			<input type="text" id="input" onKeyPress="edValueKeyPress()" placeholder="0" readonly="readonly">
+
+
+		</div>
+		<div class="key">
+					<button  onclick="getNumber(1)">
+							1
+					</button>
+					<button onclick="getNumber(2)">
+							2
+					</button>
+
+					<button  onclick="getNumber(3)">
+							3
+					</button>
+					<button  onclick="getNumber(4)">
+							4
+					</button>
+					<button  onclick="getNumber(5)">
+							5
+					</button>
+					<button  onclick="getNumber(6)">
+							6
+					</button>
+					<button  onclick="getNumber(7)">
+							7
+					</button>
+					<button  onclick="getNumber(8)">
+							8
+					</button>
+					<button  onclick="getNumber(9)">
+							9
+					</button>
+					<button  onclick="getNumber(0)">
+							0
+					</button>
+					<input type="button" value="Clear" onclick="clearSrc()">
+					<button id="minus" onclick = "getOperand('-')">
+							-
+					</button>
+					<button id="multiply" onclick = "getOperand('*')">
+							x
+					</button>
+					<button id="divid" class="divid" onclick = "getOperand('/')">
+							/
+					</button>
+					<button id="plus" class="plus" onclick = "getOperand('+')">
+							+
+					</button>
+					<button id="eq" class="eq" onclick="total()">
+						=
+					</button>
+					<button onclick="backSpace1()">
+						&#8592;
+					</button>
+					<button id="b-one" class="b-one" onclick="bracket('(')">
+						(
+					</button>
+					<button id="b-two" class="b-two" onclick="bracket(')')">
+						)
+					</button>
+		</div>
+
+
+
+
+<!--  
+		<table>
+			<tr>
+				<td>
+					<button  onclick="getNumber(1)">
+							1
+					</button>
+				</td>
+				<td>
+					<button onclick="getNumber(2)">
+							2
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(3)">
+							3
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(4)">
+							4
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button  onclick="getNumber(5)">
+							5
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(6)">
+							6
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(7)">
+							7
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(8)">
+							8
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button  onclick="getNumber(9)">
+							9
+					</button>
+				</td>
+				<td>
+					<button  onclick="getNumber(0)">
+							0
+					</button>
+				</td>
+				<td colspan="2">
+					<input type="button" value="Clear" onclick="clearSrc()">
+					
+				</td>
+
+
+			</tr>
+			<tr>
+
+				<td>
+					<button id="minus" onclick = "getOperand('-')">
+							-
+					</button>
+				</td>
+				<td>
+					<button id="multiply" onclick = "getOperand('*')">
+							x
+						</button>
+				</td>
+							<td>
+					<button id="divid" class="divid" onclick = "getOperand('/')">
+							/
+					</button>
+				</td>
+				<td rowspan="2">
+					<button id="plus" class="plus" onclick = "getOperand('+')">
+							+
+					</button>
+				</td>
+			</tr>
+
+			<tr>
+
+				
+				
+				<td colspan="2">
+					<button id="eq" class="eq" onclick="total()">
+						=
+					</button>
+				</td>
+				<td >
+					
+					<button onclick="backSpace1()">
+						&#8592;
+					</button>
+				</td>
+
+
+
+			</tr>
+			<tr>
+
+				
+				
+				<td >
+					<button id="b-one" class="b-one" onclick="bracket('(')">
+						(
+					</button>
+				</td>
+				<td >
+					<button id="b-two" class="b-two" onclick="bracket(')')">
+						)
+					</button>
+					
+				</td>
+
+
+
+			</tr>	
+
+		</table>  -->
+
+
+
+
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
